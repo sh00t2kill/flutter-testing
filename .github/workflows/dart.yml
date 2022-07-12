@@ -54,7 +54,7 @@ jobs:
       - uses: warchant/setup-sonar-scanner@v3
         #name: Run sonarqube
       - run: sonar-scanner
-           -Dsonar.host.url=${{ secrets.SONAR_URL }} 
+           -Dsonar.host.url=${{ secrets.SONAR_HOST_URL }} 
            -Dsonar.login=${{ secrets.SONAR_TOKEN }}
 
       - uses: subosito/flutter-action@v2
